@@ -188,20 +188,33 @@ module tmds_video_src_v(
       tmds_d_n <= 3'b111;
     end else begin
       if (bit_idx == 0) begin
-        sh_r <= sym_r;
-        sh_g <= sym_g;
-        sh_b <= sym_b;
+        // Output bit 0 of new symbol directly and pre-load remaining 9 bits.
+        // Separating the two cases avoids the later shift assignment overwriting
+        // the symbol-load assignment (Verilog last-NBA-wins rule).
+        // lane mapping: [0]=B, [1]=G, [2]=R
+        tmds_d_p[0] <= sym_b[0];
+        tmds_d_p[1] <= sym_g[0];
+        tmds_d_p[2] <= sym_r[0];
+        tmds_d_n[0] <= ~sym_b[0];
+        tmds_d_n[1] <= ~sym_g[0];
+        tmds_d_n[2] <= ~sym_r[0];
+        sh_r <= {1'b0, sym_r[9:1]};
+        sh_g <= {1'b0, sym_g[9:1]};
+        sh_b <= {1'b0, sym_b[9:1]};
+      end else begin
+        // lane mapping: [0]=B, [1]=G, [2]=R
+        tmds_d_p[0] <= sh_b[0];
+        tmds_d_p[1] <= sh_g[0];
+        tmds_d_p[2] <= sh_r[0];
+        // Drive n side from the same source as p to keep the differential pair
+        // consistent within the same clock edge (not from old tmds_d_p).
+        tmds_d_n[0] <= ~sh_b[0];
+        tmds_d_n[1] <= ~sh_g[0];
+        tmds_d_n[2] <= ~sh_r[0];
+        sh_r <= {1'b0, sh_r[9:1]};
+        sh_g <= {1'b0, sh_g[9:1]};
+        sh_b <= {1'b0, sh_b[9:1]};
       end
-
-      // lane mapping: [0]=B, [1]=G, [2]=R
-      tmds_d_p[0] <= sh_b[0];
-      tmds_d_p[1] <= sh_g[0];
-      tmds_d_p[2] <= sh_r[0];
-      tmds_d_n    <= ~tmds_d_p;
-
-      sh_r <= {1'b0, sh_r[9:1]};
-      sh_g <= {1'b0, sh_g[9:1]};
-      sh_b <= {1'b0, sh_b[9:1]};
 
       if (bit_idx == 9) bit_idx <= 0;
       else bit_idx <= bit_idx + 1;
