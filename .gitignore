@@ -1,0 +1,11 @@
+.Xil/
+HDMI_test.cache/
+HDMI_test.hw/
+HDMI_test.ip_user_files/
+HDMI_test.sim/
+HDMI_test.gen/
+HDMI_test.run/
+vivado.jou
+vivado.log
+*.backup.jou
+*.backup.log

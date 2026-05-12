@@ -1,0 +1,282 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA3C71E8E5BCE2577",
+      "device": "xc7a200tfbv676-3",
+      "gen_directory": "../../../../HDMI_test.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dvi2rgb_0": "",
+      "clk_wiz_0": "",
+      "rgb2dvi_0": "",
+      "util_vector_logic_0": ""
+    },
+    "interface_ports": {
+      "TMDS_in": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "digilentinc.com:interface:tmds:1.0",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
+      },
+      "DDC": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0"
+      },
+      "TMDS_OUT": {
+        "mode": "Master",
+        "vlnv_bus_definition": "digilentinc.com:interface:tmds:1.0",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
+      }
+    },
+    "ports": {
+      "reset_n": {
+        "direction": "I"
+      },
+      "clk_in": {
+        "direction": "I"
+      },
+      "pData": {
+        "direction": "O",
+        "left": "23",
+        "right": "0"
+      },
+      "pHSync": {
+        "direction": "O"
+      },
+      "pVSync": {
+        "direction": "O"
+      },
+      "pVDE": {
+        "direction": "O"
+      },
+      "wiz_locked": {
+        "direction": "O",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "dvi2rgb_0": {
+        "vlnv": "digilentinc.com:ip:dvi2rgb:2.0",
+        "xci_name": "design_2_dvi2rgb_0_0",
+        "xci_path": "ip\\design_2_dvi2rgb_0_0\\design_2_dvi2rgb_0_0.xci",
+        "inst_hier_path": "dvi2rgb_0",
+        "parameters": {
+          "kAddBUFG": {
+            "value": "true"
+          },
+          "kClkRange": {
+            "value": "1"
+          },
+          "kDebug": {
+            "value": "false"
+          },
+          "kEdidFileName": {
+            "value": "dgl_1080p_cea.data"
+          },
+          "kEmulateDDC": {
+            "value": "true"
+          },
+          "kEnableSerialClkOutput": {
+            "value": "false"
+          },
+          "kRstActiveHigh": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_2_clk_wiz_0_0",
+        "xci_path": "ip\\design_2_clk_wiz_0_0\\design_2_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "114.829"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "5.000"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "rgb2dvi_0": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "xci_name": "design_2_rgb2dvi_0_0",
+        "xci_path": "ip\\design_2_rgb2dvi_0_0\\design_2_rgb2dvi_0_0.xci",
+        "inst_hier_path": "rgb2dvi_0",
+        "parameters": {
+          "kRstActiveHigh": {
+            "value": "true"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_0_0",
+        "xci_path": "ip\\design_2_util_vector_logic_0_0\\design_2_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "TMDS_1": {
+        "interface_ports": [
+          "TMDS_in",
+          "dvi2rgb_0/TMDS"
+        ]
+      },
+      "dvi2rgb_0_DDC": {
+        "interface_ports": [
+          "DDC",
+          "dvi2rgb_0/DDC"
+        ]
+      },
+      "dvi2rgb_0_RGB": {
+        "interface_ports": [
+          "dvi2rgb_0/RGB",
+          "rgb2dvi_0/RGB"
+        ]
+      },
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "TMDS_OUT",
+          "rgb2dvi_0/TMDS"
+        ]
+      }
+    },
+    "nets": {
+      "clk_in_1": {
+        "ports": [
+          "clk_in",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "dvi2rgb_0/RefClk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "util_vector_logic_0/Op1",
+          "wiz_locked"
+        ]
+      },
+      "dvi2rgb_0_PixelClk": {
+        "ports": [
+          "dvi2rgb_0/PixelClk",
+          "rgb2dvi_0/PixelClk"
+        ]
+      },
+      "dvi2rgb_0_vid_pData": {
+        "ports": [
+          "dvi2rgb_0/vid_pData",
+          "pData",
+          "rgb2dvi_0/vid_pData"
+        ]
+      },
+      "dvi2rgb_0_vid_pHSync": {
+        "ports": [
+          "dvi2rgb_0/vid_pHSync",
+          "pHSync",
+          "rgb2dvi_0/vid_pHSync"
+        ]
+      },
+      "dvi2rgb_0_vid_pVDE": {
+        "ports": [
+          "dvi2rgb_0/vid_pVDE",
+          "pVDE",
+          "rgb2dvi_0/vid_pVDE"
+        ]
+      },
+      "dvi2rgb_0_vid_pVSync": {
+        "ports": [
+          "dvi2rgb_0/vid_pVSync",
+          "pVSync",
+          "rgb2dvi_0/vid_pVSync"
+        ]
+      },
+      "reset_n_1": {
+        "ports": [
+          "reset_n",
+          "clk_wiz_0/resetn"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "dvi2rgb_0/aRst",
+          "dvi2rgb_0/pRst",
+          "rgb2dvi_0/aRst"
+        ]
+      }
+    }
+  }
+}

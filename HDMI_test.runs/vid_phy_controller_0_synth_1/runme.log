@@ -1,0 +1,980 @@
+
+*** Running vivado
+    with args -log vid_phy_controller_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vid_phy_controller_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source vid_phy_controller_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1249.828 ; gain = 8.840
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/XilinxProject/ip/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top vid_phy_controller_0 -part xc7a200tfbv676-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbv676-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30508
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:111]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:112]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:113]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:114]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:115]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_0_gtwizard_0_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_gtwizard_0_common.v:116]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:120]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:121]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:122]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:123]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:124]
+WARNING: [Synth 8-2507] parameter declaration becomes local in vid_phy_controller_v2_2_12_gtp_common with formal parameter declaration list [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:125]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1249.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_top' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:47]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55358]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (2#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55358]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (4#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (5#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (6#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (6#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_q_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:204]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_pulse_cnt_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi' (7#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89397]
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (8#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89397]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (9#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX_CTRL' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1211]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX_CTRL' (10#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1211]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (11#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6157] synthesizing module 'OBUFTDS' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71587]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFTDS' (12#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71587]
+INFO: [Synth 8-6157] synthesizing module 'OBUFTDS__parameterized0' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71587]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFTDS__parameterized0' (12#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:71587]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper.v:73]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_init' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_init.v:71]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_multi_gt' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_multi_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_GT' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_CHANNEL' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:35766]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_CHANNEL' (13#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:35766]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_gtrxreset_seq' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_gtrxreset_seq.v:72]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_sync_block' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_sync_block.v:78]
+INFO: [Synth 8-6157] synthesizing module 'FD' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'FD' (14#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_sync_block' (15#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_sync_block.v:78]
+INFO: [Synth 8-226] default block is never used [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_gtrxreset_seq.v:179]
+INFO: [Synth 8-226] default block is never used [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_gtrxreset_seq.v:240]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_gtrxreset_seq' (16#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_gtrxreset_seq.v:72]
+WARNING: [Synth 8-6014] Unused sequential element drp_busy_i2_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_gt.v:961]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_GT' (17#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_gt.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_multi_gt' (18#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_multi_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_TX_STARTUP_FSM' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_tx_startup_fsm.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_TX_STARTUP_FSM' (19#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_tx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_RX_STARTUP_FSM' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_rx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27764]
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (20#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27764]
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_rx_startup_fsm.v:392]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_RX_STARTUP_FSM' (21#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_rx_startup_fsm.v:94]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_TX_MANUAL_PHASE_ALIGN' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_tx_manual_phase_align.v:73]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_gtwrapper_sync_pulse' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_sync_pulse.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_sync_pulse' (22#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_sync_pulse.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_TX_MANUAL_PHASE_ALIGN' (23#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper/example_design/vid_phy_controller_0_gtwrapper_tx_manual_phase_align.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper_init' (24#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper_init.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_gtwrapper' (25#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper.v:73]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_gtp_common' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:69]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_COMMON' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:36468]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_COMMON' (26#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:36468]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_gtp_common' (27#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_gtp_common.v:69]
+WARNING: [Synth 8-7071] port 'GTGREFCLK0_IN' of module 'vid_phy_controller_v2_2_12_gtp_common' is unconnected for instance 'GTPE2_COMMON_INST' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:1092]
+WARNING: [Synth 8-7071] port 'GTGREFCLK1_IN' of module 'vid_phy_controller_v2_2_12_gtp_common' is unconnected for instance 'GTPE2_COMMON_INST' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:1092]
+WARNING: [Synth 8-7023] instance 'GTPE2_COMMON_INST' of module 'vid_phy_controller_v2_2_12_gtp_common' has 35 connections declared, but only 33 given [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:1092]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_cpll_railing' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_cpll_railing.v:68]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1319]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (28#1) [E:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1319]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_cpll_railing' (29#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_cpll_railing.v:68]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_datawidth_conv' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_datawidth_conv.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_lib_fifo_dc_v1_0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:557]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_lib_cda_gray_v1_0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:156]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (29#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_lib_cda_gray_v1_0' (30#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:156]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_lib_fifo_dc_v1_0' (31#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:557]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_datawidth_conv' (32#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_datawidth_conv.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_axi4lite' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_axi4lite.v:52]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_interrupts' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_interrupts.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_interrupts' (33#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_interrupts.v:53]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg_0x340_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_axi4lite.v:452]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_axi4lite' (34#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_axi4lite.v:52]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi__parameterized0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_q_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:204]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_pulse_cnt_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi__parameterized0' (34#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi__parameterized1' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_q_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:204]
+WARNING: [Synth 8-6014] Unused sequential element DRP_Rsp_Rd_Toggle_pulse_cnt_reg was removed.  [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_drp_control_hdmi__parameterized1' (34#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_drp_control_hdmi.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_0_clkdet' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_0_clkdet.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized2' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized2' (34#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_lib_edge_v1_0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:105]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_lib_edge_v1_0' (35#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst__parameterized0' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst__parameterized0' (35#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_clkdet' (36#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_0_clkdet.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized3' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized3' (36#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_dru' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_dru.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'vid_phy_controller_v2_2_12_lib_rst_v1_0' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_lib_rst_v1_0' (37#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_lib.sv:19]
+INFO: [Synth 8-638] synthesizing module 'nidru_20_wrapper' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/nidru_20_wrapper.vhd:54]
+	Parameter S_MAX bound to: 10 - type: integer 
+	Parameter MASK_CG bound to: 16'b1111111111111111 
+	Parameter MASK_PD bound to: 16'b1111111111111111 
+	Parameter MASK_VCO bound to: 37'b1111111111111111111111111111111111111 
+	Parameter EN_ADV_COMPR bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'dru' declared at 'e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/nidru_20_v_7.vhd:48' bound to instance 'Inst_dru' of component 'dru' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/nidru_20_wrapper.vhd:124]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+	Parameter WDT_IN bound to: 10 - type: integer 
+	Parameter WDT_OUT bound to: 40 - type: integer 
+	Parameter S_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'bs_flex' declared at 'e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:32' bound to instance 'bs_flex_dru' of component 'bs_flex' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/nidru_20_wrapper.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'bs_flex' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:50]
+	Parameter WDT_IN bound to: 10 - type: integer 
+	Parameter WDT_OUT bound to: 40 - type: integer 
+	Parameter WDT_OUT_1 bound to: 8'b00101000 
+	Parameter S_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rotwdt' declared at 'e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:363' bound to instance 'Inst_mask_bs' of component 'rotwdt' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'rotwdt' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:381]
+INFO: [Synth 8-256] done synthesizing module 'rotwdt' (47#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:381]
+	Parameter WDT_IN bound to: 10 - type: integer 
+	Parameter WDT_OUT bound to: 40 - type: integer 
+	Parameter WDT_OUT_1 bound to: 8'b00101000 
+	Parameter S_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'control' declared at 'e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:246' bound to instance 'I_control' of component 'control' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'control' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'control' (48#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:264]
+	Parameter WDT_IN bound to: 10 - type: integer 
+	Parameter WDT_OUT bound to: 40 - type: integer 
+	Parameter WDT_OUT_1 bound to: 8'b00101000 
+	Parameter S_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rotwdt' declared at 'e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:363' bound to instance 'Inst_data_bs' of component 'rotwdt' [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'bs_flex' (49#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/bs_flex_v_2.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'nidru_20_wrapper' (50#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/vhd/nidru_20_wrapper.vhd:54]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_v2_2_12_dru' (51#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/hdl/src/verilog/vid_phy_controller_v2_2_dru.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized4' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized4' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized5' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized5' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized6' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized6' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized7' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized7' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized8' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized8' (51#1) [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+WARNING: [Synth 8-3848] Net vid_phy_tx_axi4s_ch3_tready in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:181]
+WARNING: [Synth 8-3848] Net vid_phy_rx_axi4s_ch3_tvalid in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:208]
+WARNING: [Synth 8-3848] Net vid_phy_rx_axi4s_ch3_tdata in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:209]
+WARNING: [Synth 8-3848] Net vid_phy_rx_axi4s_ch3_tuser in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:210]
+WARNING: [Synth 8-3848] Net b0gt2_cplllock_out_sync in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:519]
+WARNING: [Synth 8-3848] Net b0gt1_cplllock_out_sync in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:411]
+WARNING: [Synth 8-3848] Net b0gt0_cplllock_out_sync in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:303]
+WARNING: [Synth 8-3848] Net b0gt2_rxbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:563]
+WARNING: [Synth 8-3848] Net b0gt2_rxprbserr_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:555]
+WARNING: [Synth 8-3848] Net b0gt2_txbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:592]
+WARNING: [Synth 8-3848] Net b0gt1_rxbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:455]
+WARNING: [Synth 8-3848] Net b0gt1_rxprbserr_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:447]
+WARNING: [Synth 8-3848] Net b0gt1_txbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:484]
+WARNING: [Synth 8-3848] Net b0gt0_rxbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:347]
+WARNING: [Synth 8-3848] Net b0gt0_rxprbserr_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:339]
+WARNING: [Synth 8-3848] Net b0gt0_txbufstatus_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:376]
+WARNING: [Synth 8-3848] Net b0gt0_txphaligndone_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:378]
+WARNING: [Synth 8-3848] Net b0gt1_txphaligndone_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:486]
+WARNING: [Synth 8-3848] Net b0gt2_txphaligndone_out in module/entity vid_phy_controller_0_top does not have driver. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:594]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0_top' (52#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0_top.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'vid_phy_controller_0' (53#1) [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/synth/vid_phy_controller_0.v:59]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P[7] in module rotwdt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module brick_10_adv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module brick_10_adv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EN in module brick_10_adv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[311] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[310] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[309] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[308] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[307] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[306] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[305] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[304] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[295] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[294] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[293] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[292] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[291] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[290] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[289] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[288] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[279] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[278] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[277] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[276] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[275] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[274] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[273] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[272] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[263] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[262] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[261] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[260] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[259] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[258] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[257] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[256] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[247] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[246] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[245] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[244] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[243] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[242] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[241] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[240] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[231] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[230] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[229] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[228] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[227] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[226] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[225] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[224] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[215] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[214] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[213] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[212] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[211] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[210] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[209] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[208] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[199] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[198] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[197] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[196] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[195] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[194] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[193] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[192] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[183] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[182] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[181] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[180] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[179] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[178] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[177] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[176] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[167] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[166] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[165] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[164] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[163] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[162] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[161] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[160] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[151] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[150] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[149] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[148] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[147] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[146] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[145] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[144] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[135] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[134] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[133] in module ss is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DELTA_VEC[132] in module ss is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1264.848 ; gain = 15.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1264.848 ; gain = 15.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1264.848 ; gain = 15.020
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1270.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 409 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_ooc_fixed.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_ooc_fixed.xdc] for cell 'inst'
+Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper.xdc] for cell 'inst/gt_wrapper_inst/inst'
+Finished Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/ip_0/vid_phy_controller_0_gtwrapper.xdc] for cell 'inst/gt_wrapper_inst/inst'
+Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_xdc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_xdc.xdc] for cell 'inst'
+Parsing XDC File [E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vid_phy_controller_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vid_phy_controller_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc:60]
+Finished Parsing XDC File [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vid_phy_controller_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vid_phy_controller_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/RXPLL_DRP_INST/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/RXPLL_DRP_INST/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/TXPLL_DRP_INST/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/TXPLL_DRP_INST/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Config_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Config_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/RXPLL_DRP_INST/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/RXPLL_DRP_INST/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/TXPLL_DRP_INST/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/TXPLL_DRP_INST/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Status_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Status_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vid_phy_controller_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vid_phy_controller_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/RXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/RXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/TXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/TXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt0_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt0_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt1_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt1_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gt2_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gt2_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/drp_control_b0gtcommon_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/drp_control_b0gtcommon_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/xpm_array_single_PLL0LOCK_in_sync_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/xpm_array_single_PLL0LOCK_in_sync_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/xpm_array_single_PLL1LOCK_in_sync_inst' of design 'preSynthElab_1' [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: inst/xpm_array_single_PLL1LOCK_in_sync_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vid_phy_controller_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vid_phy_controller_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 114 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1407.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 405 instances were transformed.
+  BUFGMUX_CTRL => BUFGCTRL (inverted pins: S0): 1 instance 
+  FD => FDRE: 396 instances
+  FDP => FDPE: 6 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS(x2)): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1411.801 ; gain = 4.520
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbv676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gt_wrapper_inst/inst. (constraint file  E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gt_wrapper_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/TXPLL_DRP_INST/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/RXPLL_DRP_INST/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Config_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/TXPLL_DRP_INST/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/RXPLL_DRP_INST/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt0_inst/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt1_inst/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt2_inst/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gtcommon_inst/xpm_handshake_DRP_Status_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/DRUCLK_FREQ_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/RXCLK_FREQ_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/TXCLK_FREQ_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt0_inst/FIFO_INST/RP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt0_inst/FIFO_INST/WP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt1_inst/FIFO_INST/RP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt1_inst/FIFO_INST/WP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt2_inst/FIFO_INST/RP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt2_inst/FIFO_INST/WP_CDA_INST/BCLK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_rxbufstatus_out_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_rxbufstatus_out_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_rxbufstatus_out_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_DRU_CTRL_in_sync_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_DRU_VERSION_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXDIFFCTRL_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXDIFFCTRL_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXDIFFCTRL_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSSEL_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSSEL_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSSEL_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbssel_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbssel_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbssel_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txbufstatus_out_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txbufstatus_out_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txbufstatus_out_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txpd_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txpd_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_txpd_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/TXPLL_DRP_INST/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/RXPLL_DRP_INST/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt0_inst/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt1_inst/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt2_inst/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gtcommon_inst/xpm_single_drp_reset_RST_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/DRUCLK_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/RXCLK_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/TXCLK_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/DRUCLK_RUN_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt0_inst/LCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt1_inst/LCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt2_inst/LCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt0_inst/RCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt1_inst/RCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dwc_b0gt2_inst/RCLK_RST_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/RXCLK_RUN_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/TXCLK_RUN_SYNC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clock_detector_inst/TX_LOCK_CAP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_DRU_ACT_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_DRU_ACT_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_DRU_ACT_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_PLL0LOCK_in_sync_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_PLL1LOCK_in_sync_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbserr_out_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbserr_out_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbserr_out_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/TXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/RXPLL_DRP_INST/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt0_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt1_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gt2_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/drp_control_b0gtcommon_inst/xpm_single_DRP_Rsp_Rd_Toggle_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_clk_pll0_rst_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_clk_pll1_rst_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_obuftds_tx_en_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_pll0_pd_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_pll1_pd_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_rx_mmcm_drp_locked_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_rx_reset_done_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_rx_reset_done_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_rx_reset_done_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_tx_mmcm_drp_locked_b0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_tx_reset_done_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_tx_reset_done_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_tx_reset_done_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_txphaligndone_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_txphaligndone_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_txphaligndone_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMHFOVRDEN_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMHFOVRDEN_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMHFOVRDEN_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMLFKLOVRDEN_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMLFKLOVRDEN_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXLPMLFKLOVRDEN_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXPOLARITY_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXPOLARITY_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_RXPOLARITY_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TX8B10B_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TX8B10B_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TX8B10B_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXINHIBIT_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXINHIBIT_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXINHIBIT_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPOLARITY_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPOLARITY_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPOLARITY_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSFORCEERR_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSFORCEERR_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_TXPRBSFORCEERR_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbscntrreset_in_sync_b0gt0inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbscntrreset_in_sync_b0gt1inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_array_single_prbscntrreset_in_sync_b0gt2inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vid_phy_controller_0_gtwrapper_gtrxreset_seq'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'vid_phy_controller_0_gtwrapper_TX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'vid_phy_controller_0_gtwrapper_RX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_phalign_manual_state_reg' in module 'vid_phy_controller_0_gtwrapper_TX_MANUAL_PHASE_ALIGN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                         00000010 |                              000
+                  drp_rd |                         10000000 |                              001
+            wait_rd_data |                         01000000 |                              010
+                   wr_16 |                         00100000 |                              011
+           wait_wr_done1 |                         00010000 |                              100
+           wait_pmareset |                         00001000 |                              101
+                   wr_20 |                         00000100 |                              110
+           wait_wr_done2 |                         00000001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'vid_phy_controller_0_gtwrapper_gtrxreset_seq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+       WAIT_FOR_TXOUTCLK |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_TXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+          RESET_FSM_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'vid_phy_controller_0_gtwrapper_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'vid_phy_controller_0_gtwrapper_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+         WAIT_PHRST_DONE |                             0001 |                             0001
+                M_PHINIT |                             0010 |                             0010
+               M_PHALIGN |                             0011 |                             0011
+                 M_DLYEN |                             0100 |                             0100
+                S_PHINIT |                             0101 |                             0101
+               S_PHALIGN |                             0110 |                             0110
+                M_DLYEN2 |                             0111 |                             0111
+            PHALIGN_DONE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_phalign_manual_state_reg' using encoding 'sequential' in module 'vid_phy_controller_0_gtwrapper_TX_MANUAL_PHASE_ALIGN'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__15) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__16) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__17) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__18) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__19) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__20) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__21) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__22) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__23) is unused and will be removed from module dru.
+WARNING: [Synth 8-3332] Sequential element (fnidru_1.Inst_pd/AVE_reg__24) is unused and will be removed from module dru.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_pll0lock/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_txresetfsm_i/sync_pll0lock/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_txresetfsm_i/sync_pll0lock/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/reset_sync1_rx) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/reset_sync2_rx) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/sync_pll1lock/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/reset_sync1_rx) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt1_rxresetfsm_i/reset_sync2_rx) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Synth 8-3332] Sequential element (gt2_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module vid_phy_controller_0_gtwrapper_init.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 50 of e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc:50]
+WARNING: [Synth 8-3321] set_multicycle_path : Empty from list for constraint at line 56 of e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc. [e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/ip/vid_phy_controller_0/vid_phy_controller_0_clocks.xdc:56]
+INFO: [Synth 8-5578] Moved timing constraint from pin 'dru_clk_i' to pin 'RXPLL_LCLK_BUF_INST/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_detector_inst/DRUCLK_RST_INST/src_arst' to pin 'clock_detector_inst/clk_dru_freq_rst_reg/Q'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_detector_inst/RXCLK_RST_INST/src_arst' to pin 'clock_detector_inst/clk_rx_freq_rst_reg/Q'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_detector_inst/TXCLK_RST_INST/src_arst' to pin 'clock_detector_inst/clk_tx_freq_rst_reg/Q'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 1411.801 ; gain = 161.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:57 . Memory (MB): peak = 1450.707 ; gain = 200.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin xpm_single_txphaligndone_b0gt0inst:src_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin xpm_single_txphaligndone_b0gt1inst:src_in to constant 0
+INFO: [Synth 8-3295] tying undriven pin xpm_single_txphaligndone_b0gt2inst:src_in to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:09 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:10 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:14 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:14 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:06 ; elapsed = 00:02:15 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:06 ; elapsed = 00:02:15 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     7|
+|2     |BUFGMUX_CTRL  |     1|
+|3     |BUFH          |     2|
+|4     |CARRY4        |   919|
+|5     |DSP48E1       |     3|
+|6     |GTPE2_CHANNEL |     3|
+|7     |GTPE2_COMMON  |     1|
+|8     |IBUFDS_GTE2   |     2|
+|9     |LUT1          |   430|
+|10    |LUT2          |  2284|
+|11    |LUT3          |  1346|
+|12    |LUT4          |  1495|
+|13    |LUT5          |   969|
+|14    |LUT6          |  1687|
+|15    |MMCME2_ADV    |     1|
+|16    |MUXF7         |    13|
+|17    |ODDR          |     2|
+|18    |PLLE2_ADV     |     1|
+|19    |RAM32M        |    21|
+|20    |SRLC32E       |    14|
+|21    |FD            |   288|
+|22    |FDCE          |  3094|
+|23    |FDC           |     6|
+|24    |FDPE          |    61|
+|25    |FDRE          |  5393|
+|26    |FDSE          |    63|
+|27    |IBUF          |     4|
+|28    |OBUFTDS       |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:06 ; elapsed = 00:02:15 . Memory (MB): peak = 1465.387 ; gain = 215.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 168 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:02:10 . Memory (MB): peak = 1465.387 ; gain = 68.605
+Synthesis Optimization Complete : Time (s): cpu = 00:02:06 ; elapsed = 00:02:15 . Memory (MB): peak = 1465.387 ; gain = 215.559
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.597 . Memory (MB): peak = 1473.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1257 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1491.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 318 instances were transformed.
+  BUFGMUX_CTRL => BUFGCTRL (inverted pins: S0): 1 instance 
+  FD => FDRE: 288 instances
+  FDC_1 => FDCE (inverted pins: C): 6 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+
+Synth Design complete, checksum: 6d1152d2
+INFO: [Common 17-83] Releasing license: Synthesis
+276 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:29 . Memory (MB): peak = 1491.738 ; gain = 241.910
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/vid_phy_controller_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vid_phy_controller_0, cache-ID = f641b8dcf8309ca7
+INFO: [Coretcl 2-1174] Renamed 192 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxProject/HDMI_test/HDMI_test.runs/vid_phy_controller_0_synth_1/vid_phy_controller_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vid_phy_controller_0_utilization_synth.rpt -pb vid_phy_controller_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 22:06:42 2026...
