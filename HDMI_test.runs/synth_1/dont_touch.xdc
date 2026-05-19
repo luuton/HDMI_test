@@ -13,4 +13,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_cl
 # IP: bd/design_2/ip/design_2_rgb2dvi_0_0/design_2_rgb2dvi_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_rgb2dvi_0_0 || ORIG_REF_NAME==design_2_rgb2dvi_0_0} -quiet] -quiet
 
+# IP: bd/design_2/ip/design_2_util_vector_logic_0_0/design_2_util_vector_logic_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_util_vector_logic_0_0 || ORIG_REF_NAME==design_2_util_vector_logic_0_0} -quiet] -quiet
+
 # XDC: e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/design_2_ooc.xdc

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA3C71E8E5BCE2577",
+      "boundary_crc": "0x375AA26416D34B38",
       "device": "xc7a200tfbv676-3",
       "gen_directory": "../../../../HDMI_test.gen/sources_1/bd/design_2",
       "name": "design_2",
@@ -66,6 +66,35 @@
             "value_src": "ip_prop"
           }
         }
+      },
+      "clk_out1": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "200000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "pLocked": {
+        "direction": "O"
       }
     },
     "components": {
@@ -219,7 +248,8 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "dvi2rgb_0/RefClk"
+          "dvi2rgb_0/RefClk",
+          "clk_out1"
         ]
       },
       "clk_wiz_0_locked": {
@@ -233,6 +263,12 @@
         "ports": [
           "dvi2rgb_0/PixelClk",
           "rgb2dvi_0/PixelClk"
+        ]
+      },
+      "dvi2rgb_0_pLocked": {
+        "ports": [
+          "dvi2rgb_0/pLocked",
+          "pLocked"
         ]
       },
       "dvi2rgb_0_vid_pData": {

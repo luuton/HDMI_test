@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue May 12 13:40:13 2026
+| Date         : Tue May 19 17:36:49 2026
 | Host         : MagicBook-Pro-16-For-ZzzLTT running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
 | Design       : design_2_wrapper
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    3 |     0 |          0 |       400 |  0.75 |
+| Bonded IOB                  |   33 |     0 |          0 |       400 |  8.25 |
 | Bonded IPADs                |    0 |     0 |          0 |        26 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |        16 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |        10 |  0.00 |
@@ -150,6 +150,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| OBUF     |   30 |                  IO |
 | IBUF     |    3 |                  IO |
 | OBUFT    |    2 |                  IO |
 +----------+------+---------------------+
@@ -158,13 +159,14 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------------------+------+
-|       Ref Name       | Used |
-+----------------------+------+
-| design_2_rgb2dvi_0_0 |    1 |
-| design_2_dvi2rgb_0_0 |    1 |
-| design_2_clk_wiz_0_0 |    1 |
-+----------------------+------+
++--------------------------------+------+
+|            Ref Name            | Used |
++--------------------------------+------+
+| design_2_util_vector_logic_0_0 |    1 |
+| design_2_rgb2dvi_0_0           |    1 |
+| design_2_dvi2rgb_0_0           |    1 |
+| design_2_clk_wiz_0_0           |    1 |
++--------------------------------+------+
 
 
 9. Instantiated Netlists

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_HDMI_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dvi_constants" />
+            <top_module name="glbl" />
+            <top_module name="tb_HDMI" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="71,059,337 ps"></ZoomStartTime>
+      <ZoomEndTime time="71,059,343 ps"></ZoomEndTime>
+      <Cursor1Time time="71,059,342 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="294"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tb_HDMI/dut_reset_n" type="logic">
+      <obj_property name="ElementShortName">dut_reset_n</obj_property>
+      <obj_property name="ObjectShortName">dut_reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/clk_wiz_resetn" type="logic">
+      <obj_property name="ElementShortName">clk_wiz_resetn</obj_property>
+      <obj_property name="ObjectShortName">clk_wiz_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/clk_pix" type="logic">
+      <obj_property name="ElementShortName">clk_pix</obj_property>
+      <obj_property name="ObjectShortName">clk_pix</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/clk_100M" type="logic">
+      <obj_property name="ElementShortName">clk_100M</obj_property>
+      <obj_property name="ObjectShortName">clk_100M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Data_p" type="array">
+      <obj_property name="ElementShortName">TMDS_Data_p[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Data_p[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Data_n" type="array">
+      <obj_property name="ElementShortName">TMDS_Data_n[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Data_n[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Clk_p" type="logic">
+      <obj_property name="ElementShortName">TMDS_Clk_p</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Clk_n" type="logic">
+      <obj_property name="ElementShortName">TMDS_Clk_n</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Data_n_out" type="array">
+      <obj_property name="ElementShortName">TMDS_Data_n_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Data_n_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Data_p_out" type="array">
+      <obj_property name="ElementShortName">TMDS_Data_p_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Data_p_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Clk_n_out" type="logic">
+      <obj_property name="ElementShortName">TMDS_Clk_n_out</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Clk_n_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/TMDS_Clk_p_out" type="logic">
+      <obj_property name="ElementShortName">TMDS_Clk_p_out</obj_property>
+      <obj_property name="ObjectShortName">TMDS_Clk_p_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/wiz_locked" type="logic">
+      <obj_property name="ElementShortName">wiz_locked</obj_property>
+      <obj_property name="ObjectShortName">wiz_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/plocked" type="logic">
+      <obj_property name="ElementShortName">plocked</obj_property>
+      <obj_property name="ObjectShortName">plocked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/pVDE" type="logic">
+      <obj_property name="ElementShortName">pVDE</obj_property>
+      <obj_property name="ObjectShortName">pVDE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/pData_out" type="array">
+      <obj_property name="ElementShortName">pData_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pData_out[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_HDMI/period" type="array">
+      <obj_property name="ElementShortName">period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">period[31:0]</obj_property>
+   </wvobject>
+</wave_config>

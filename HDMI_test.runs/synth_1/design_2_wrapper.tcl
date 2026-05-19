@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbv676-3
 
@@ -88,15 +89,15 @@ set_property ip_output_repo e:/XilinxProject/HDMI_test/HDMI_test.cache/ip [curre
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+read_verilog -library xil_defaultlib E:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
 add_files E:/XilinxProject/HDMI_test/HDMI_test.srcs/sources_1/bd/design_2/design_2.bd
+set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_refclk/ila_refclk_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_pixclk/ila_pixclk_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_timing_workaround.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/dvi2rgb.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_dvi2rgb_0_0/src/ila_refclk/ila_refclk_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/XilinxProject/HDMI_test/HDMI_test.gen/sources_1/bd/design_2/ip/design_2_clk_wiz_0_0/design_2_clk_wiz_0_0_ooc.xdc]
@@ -117,6 +118,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental E:/XilinxProject/HDMI_test/HDMI_test.srcs/utils_1/imports/synth_1/design_2_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
